@@ -1,6 +1,23 @@
 \documentclass[]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
+\usepackage{listings}
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+\AfterEndEnvironment{lstlisting}{\leavevmode}
+
 \setbeamertemplate{caption}[numbered]
 \mode<presentation>
 \title{Git и его использование}
